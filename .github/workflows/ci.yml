@@ -82,8 +82,8 @@ jobs:
       - name: Making bin/rails executable
         run: chmod +x bin/rails
 
-      - name: Making bin/rails db:migrate executable
-        run: chmod +x bin/rails db:migrate
+      - name: Rub database migration
+        run: bin/rails db:migrate
 
       - name: Run tests
         env:
